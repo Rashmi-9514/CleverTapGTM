@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- 
+  <link rel="manifest" href="manifest.json">
   <title>Vellesketchers | Home</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -79,7 +79,12 @@
     }
 
     /* Image Containers */
-    .img-header-dobby,
+    .img-header-dobby {
+      background-color: transparent !important;
+      width: 100%;
+      padding: 20px;
+    }
+
     .img-tuna,
     .img-birdie,
     .img-kat,
@@ -195,5 +200,7 @@
     <h2>© Rashmi Yadav</h2>
   </div>
 
+  <script src="clevertap_sw.js"></script>
+  <script src="notification_prompt.js"></script>
 </body>
 </html>
