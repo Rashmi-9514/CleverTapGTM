@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="manifest" href="manifest.json">
+ 
   <title>Vellesketchers | Home</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,19 +17,19 @@
     }
 
     /* Header */
-    .home-header {
+    .header-home {
       padding: 80px;
       text-align: center;
       background: #1abc9c;
       color: white;
     }
 
-    .home-header h1 {
+    .header-home h1 {
       font-size: 40px;
     }
 
     /* Navbar */
-    .home-navbar {
+    .navbar-home {
       overflow: hidden;
       background-color: #333;
       position: sticky;
@@ -37,7 +37,7 @@
       top: 0;
     }
 
-    .home-navbar a {
+    .navbar-home a {
       float: left;
       display: block;
       color: white;
@@ -46,46 +46,52 @@
       text-decoration: none;
     }
 
-    .home-navbar a.right {
+    .navbar-home a.right {
       float: right;
     }
 
-    .home-navbar a:hover {
+    .navbar-home a:hover {
       background-color: #ddd;
       color: black;
     }
 
-    .home-navbar a.active {
+    .navbar-home a.active {
       background-color: #666;
       color: white;
     }
 
-    /* Layout */
-    .home-content-row {  
+    /* Content Layout */
+    .content-row-home {  
       display: flex;
       flex-wrap: wrap;
     }
 
-    .home-sidebar {
+    .sidebar-home {
       flex: 30%;
       background-color: #f1f1f1;
       padding: 20px;
     }
 
-    .home-main-content {
+    .main-content-home {
       flex: 70%;
       background-color: white;
       padding: 20px;
     }
 
-    .home-img-container {
+    /* Image Containers */
+    .img-header-dobby,
+    .img-tuna,
+    .img-birdie,
+    .img-kat,
+    .img-eye,
+    .img-l {
       background-color: #aaa;
       width: 100%;
       padding: 20px;
     }
 
     /* Footer */
-    .home-footer {
+    .footer-home {
       padding: 20px;
       text-align: center;
       background: #ddd;
@@ -93,13 +99,13 @@
 
     /* Responsive */
     @media screen and (max-width: 700px) {
-      .home-content-row {
+      .content-row-home {
         flex-direction: column;
       }
     }
 
     @media screen and (max-width: 400px) {
-      .home-navbar a {
+      .navbar-home a {
         float: none;
         width: 100%;
       }
@@ -121,64 +127,73 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <div class="home-header">
+  <div class="header-home">
     <h1>Vellesketchers</h1>
     <p>A <b>Creator</b> Dreamer Artist.</p>
-    <img src="Dobby.png" alt="Tuna" width="60%" height="40%">
+    <div class="img-header-dobby">
+      <img src="Dobby.png" alt="Tuna" width="60%" height="40%">
+    </div>
   </div>
 
-  <div class="home-navbar">
+  <div class="navbar-home">
     <a href="index.html" class="active">Home</a>
     <a href="about.html">About Me</a>
     <a href="login.html">Login</a>
     <a href="https://www.instagram.com/vellesketchers/?hl=en" class="right">Instagram</a>
   </div>
 
-  <div class="home-content-row">
-    <div class="home-sidebar">
+  <div class="content-row-home">
+    <div class="sidebar-home">
       <h2>About Me</h2>
       <h5>My Work:</h5>
-      <div class="home-img-container" style="height:300px; width: 250px;">
+
+      <div class="img-tuna" style="height:300px; width: 250px;">
         <img src="Tuna.png" alt="Tuna" width="100%" height="100%">
       </div>
+
       <p>I like to sketch the world with my imagination</p>
+
       <h3>More Work</h3>
       <p>Look at some more of my creations</p>
-      <div class="home-img-container" style="height:250px; width: 250px">
-        <img src="birdie.png" alt="eye" width="100%" height="102%">
+
+      <div class="img-birdie" style="height:250px; width: 250px;">
+        <img src="birdie.png" alt="Birdie" width="100%" height="102%">
       </div><br>
-      <div class="home-img-container" style="height:200px; width: 250px">
-        <img src="kat.png" alt="eye" width="100%" height="102%">
+
+      <div class="img-kat" style="height:200px; width: 250px;">
+        <img src="kat.png" alt="Kat" width="100%" height="102%">
       </div><br>
+
       <p>You can Follow my art on Instagram</p>
     </div>
 
-    <div class="home-main-content">
+    <div class="main-content-home">
       <h2>Beauty of the Beholder</h2>
       <h5>Digital painting of Iris, NOVEMBER 26, 2020</h5>
-      <div class="home-img-container" style="height:400px;">
-        <img src="eye.png" alt="eye" width="100%" height="102%">
+
+      <div class="img-eye" style="height:400px;">
+        <img src="eye.png" alt="Eye Artwork" width="100%" height="102%">
       </div>
+
       <p>Digital Art</p>
       <p>The inspiration behind this art is the different perspective of people despite having the same view</p>
-
       <br>
+
       <h2>L</h2>
       <h5>He who strikes first, wins.</h5>
-      <div class="home-img-container" style="height:400px;">
-        <img src="L.png" alt="eye" width="100%" height="100%">
+
+      <div class="img-l" style="height:400px;">
+        <img src="L.png" alt="L" width="100%" height="100%">
       </div>
+
       <p>Intelligence, Rivalry</p>
       <p>Who does not like Anime, The Epic Death Note creation.</p>
     </div>
   </div>
 
-  <div class="home-footer">
+  <div class="footer-home">
     <h2>© Rashmi Yadav</h2>
   </div>
-
-  <script src="clevertap_sw.js"></script>
-  <script src="notification_prompt.js"></script>
 
 </body>
 </html>
